@@ -120,3 +120,31 @@ footer h3 {
   font-size: 2.2rem;
   margin: 0.5rem 0 0;
 }
+
+/* Large Screen Media Queries 500px to 599px*/
+
+@media (min-width: 500px) {
+  .landing {
+    display: flex;
+    height: 100%;
+  }
+
+  .landing-text {
+    height: 85vh;
+  }
+
+  /*  Refactor: Recrop image for 500 to 600px screen */
+  .landing-image {
+    height: 85vh;
+    flex: 0 1 80vw;
+    background-position: 55%, center; /* crop allowance right */
+  }
+}
+
+/* Large Screen greater than 700px */
+
+@media (min-width: 700px) {
+  .btn {
+    padding: 1rem 3rem;
+  }
+}
