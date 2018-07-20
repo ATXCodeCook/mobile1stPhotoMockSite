@@ -79,14 +79,14 @@ img {
   border-top: rgba(46, 46, 46, 0.9) 5px solid;
 }
 
-.header {
+.portfolio-header {
   padding: 1.5rem;
   text-align: center;
   background: #2e2e2e;
   color: #eee;
 }
 
-.header h2 {
+.portfolio-header h2 {
   display: inline-block;
   border-left: dotted 1px #fff;
   border-right: dotted 1px #fff;
@@ -139,6 +139,17 @@ footer h3 {
     flex: 0 1 80vw;
     background-position: 55%, center; /* crop allowance right */
   }
+
+  .images {
+    margin-top: 0.75rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .images-image {
+    margin: auto;
+    width: 49%;
+  }
 }
 
 /* Large Screen greater than 700px */
@@ -146,5 +157,9 @@ footer h3 {
 @media (min-width: 700px) {
   .btn {
     padding: 1rem 3rem;
+  }
+
+  .images-image {
+    width: 33%;
   }
 }
